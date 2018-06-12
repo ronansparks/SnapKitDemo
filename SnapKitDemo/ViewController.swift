@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     lazy var animationBox = UIView()
     var scale = 1.0
     
-    var topConstraint: Constraint?
+    var topConstraint: Constraint? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -143,14 +143,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 extension ViewController {
     func setupLogIn() {
-//        let titleLabel = UILabel()
-//        titleLabel.text = "Awesome SnapKit"
-//        view.addSubview(titleLabel)
-//        titleLabel.snp.makeConstraints { (make) in
-//            make.centerX.equalToSuperview()
-//            make.top.equalToSuperview().offset(100)
-//        }
-        
         let inputBox = UIView()
         inputBox.layer.borderColor = UIColor.gray.cgColor
         inputBox.layer.borderWidth = 1
